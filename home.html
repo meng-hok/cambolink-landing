@@ -518,7 +518,12 @@
         data-cf-beacon="{"
         rayid":"8adc3c449f21b96c","version":"2024.7.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","servertiming":{"name":{"cfl4":true}}}"=""
         crossorigin="anonymous"></script>
-
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        if(window.Telegram && window.Telegram.WebApp){
+            alert(JSON.stringify(window.Telegram.WebApp.initDataUnsafe))
+        }
+    </script>
 </body>
 
 </html>
